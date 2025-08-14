@@ -104,7 +104,7 @@ app.post('/api/events/payment', async (req, res) => {
 });
 
 app.get('/api/events/health', (req, res) => {
-    res.status(200).send();
+    res.status(200).send({status: true});
 });
 
 // Запуск сервера и Kafka клиентов
